@@ -1,1 +1,1 @@
-Github pages for VATS project
+Vats Project page to be hosted in Github Pages
