@@ -1,7 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { makeStyles } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -10,19 +7,28 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
-import CardActions from '@mui/material/CardActions';
-import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
-
+import { AccordionActions } from '@mui/material';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar className = "App-header">
+          <Avatar sx={{margin:"10px"}}variant="square" src={process.env.PUBLIC_URL + '/static/kings.svg'} />
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: "left" }}>
+            Visual Analytics for Time-series (VATS)
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </Box>
+    
+      <header>
         <p>
-          Visual Analytics for Time-series (VATS)
+          
         </p>
         <p>
           The COVID-19 pandemic has been one of the biggest public health challenges we have faced in the last
